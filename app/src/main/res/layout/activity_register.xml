@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_accent_color"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtRegisterText"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/status_bar_color"
+        android:text="Here's your first step towards better you!"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="190dp"
+        android:layout_height="170dp"/>
+
+    <ImageView
+        android:id="@+id/imgAppIcon"
+        android:src="@drawable/ic_welcome"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="160dp"
+        android:layout_height="140dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/RegisterCardView"
+        android:background="@color/background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtRegisterText">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:text="@string/name"
+                android:textColor="@color/app_accent_color"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edtName"
+                app:layout_constraintTop_toBottomOf="@id/txtName"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:text="@string/email"
+                android:textColor="@color/app_accent_color"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/edtName"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edtEmail"
+                app:layout_constraintTop_toBottomOf="@id/txtEmail"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtPassword"
+                android:text="@string/password"
+                android:textColor="@color/app_accent_color"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/edtEmail"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edtPassword"
+                app:layout_constraintTop_toBottomOf="@id/txtPassword"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:text="Register"
+                android:backgroundTint="@color/app_text_color"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/View1"
+        android:layout_width="140dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_height="0.5dp"
+        android:background="@color/text_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegisterCardView" />
+
+    <TextView
+        android:id="@+id/txtOr"
+        android:layout_marginTop="22dp"
+        android:text="@string/or"
+        android:textColor="@color/text_color"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/View1"
+        app:layout_constraintTop_toBottomOf="@id/RegisterCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/View2"
+        android:layout_width="140dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_height="0.5dp"
+        android:background="@color/text_color"
+        app:layout_constraintStart_toEndOf="@id/txtOr"
+        app:layout_constraintTop_toBottomOf="@id/RegisterCardView" />
+
+    <ImageView
+        android:id="@+id/imgGoogleIcon"
+        android:layout_marginTop="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_google"
+        app:layout_constraintEnd_toStartOf="@id/imgTwitterIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/View1"/>
+
+    <ImageView
+        android:id="@+id/imgTwitterIcon"
+        android:layout_marginTop="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_twitter"
+        app:layout_constraintEnd_toStartOf="@id/imgFacebookIcon"
+        app:layout_constraintStart_toEndOf="@id/imgGoogleIcon"
+        app:layout_constraintTop_toBottomOf="@id/View1"/>
+
+    <ImageView
+        android:id="@+id/imgFacebookIcon"
+        android:layout_marginTop="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgTwitterIcon"
+        app:layout_constraintTop_toBottomOf="@id/View1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
