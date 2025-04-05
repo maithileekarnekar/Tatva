@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"/>
 
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnRegister"
                 android:text="Register"
                 android:backgroundTint="@color/app_text_color"
                 android:textColor="@color/white"

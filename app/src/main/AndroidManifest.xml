@@ -23,11 +23,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".auth.ui.WelcomeActivity"
+        <activity android:name=".auth.views.WelcomeActivity"
             android:exported="true">
         </activity>
 
-        <activity android:name=".auth.ui.RegisterActivity"
+        <activity android:name=".auth.views.RegisterActivity"
             android:exported="true">
         </activity>
     </application>

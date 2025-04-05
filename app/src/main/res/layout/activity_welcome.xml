@@ -73,7 +73,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
-        android:id="@+id/txtRegister"
+        android:id="@+id/txtNewUserRegister"
         android:text="@string/new_user_register_now"
         android:textColor="@color/app_text_color"
         android:layout_marginTop="10dp"
